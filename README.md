@@ -20,8 +20,8 @@
 ### 1. Клонировать репозиторий
 
 ```bash
-git clone https://github.com/Dontgoingforyou/educational_modules.git
-cd educational_modules
+git clone https://github.com/Supstar10/Diploma_SkyPro.git
+cd Diploma_SkyPro
 ```
 
 ### 2. Собрать контейнер Docker(Миграции и фикстуры будут загружены автоматически, код описан в docker/entrypoint.sh)
@@ -36,27 +36,12 @@ docker compose up --build
 
 ### 4. Эндпойнты API
 
-#### Пользователи
-- POST /users/token/ — Получить токен для аутентификации.
-- POST /users/token/refresh/ — Обновить токен.
-- GET /users/ — Получить список всех пользователей.
-- GET /users/{id}/ — Получить информацию о пользователе.
-- PATCH /users/{id}/update_role/ — Обновить роль пользователя (admin, teacher, student).
-
 #### Образовательные модули
 - GET /api/modules/ — Получить список образовательных модулей.
 - POST /api/modules/ — Создать новый образовательный модуль.
 - GET /api/modules/{id}/ — Получить информацию о модуле.
 - PATCH /api/modules/{id}/ — Обновить образовательный модуль.
 - DELETE /api/modules/{id}/ — Удалить образовательный модуль.
-- POST /api/modules/{id}/publish/ — Опубликовать образовательный модуль.
-
-#### Уроки
-- GET /api/lessons/ — Получить список всех уроков.
-- POST /api/lessons/ — Создать новый урок.
-- GET /api/lessons/{id}/ — Получить информацию о уроке.
-- PATCH /api/lessons/{id}/ — Обновить урок.
-- DELETE /api/lessons/{id}/ — Удалить урок.
 
 ### 5. Тесты
 Чтобы запустить тесты, выполните команду:
