@@ -1,0 +1,32 @@
+[
+    {
+        "model": "modules.educationmodule",
+        "pk": 1,
+        "fields": {
+            "order": 1,
+            "title": "Тестовый модуль",
+            "description": "Это тестовый модуль",
+            "is_published": false
+        }
+    },
+    {
+        "model": "modules.educationmodule",
+        "pk": 2,
+        "fields": {
+            "order": 2,
+            "title": "Тестовый модуль",
+            "description": "Это второй тестовый модуль",
+            "is_published": false
+        }
+    },
+    {
+        "model": "modules.educationmodule",
+        "pk": 3,
+        "fields": {
+            "order": 3,
+            "title": "Тестовый модуль",
+            "description": "Это третий тестовый модуль",
+            "is_published": false
+        }
+    }
+]
